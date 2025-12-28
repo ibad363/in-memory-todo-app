@@ -22,7 +22,7 @@ A command-line Todo application that allows you to manage tasks entirely in memo
 
 1. Clone the repository
 2. Install dependencies: `uv sync` (if there are dependencies) or just run the Python script directly
-3. Run the application: `python src/main.py`
+3. Run the application: `python src/main.py` or `uv run -m src`
 
 ## Usage
 
