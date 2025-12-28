@@ -1,55 +1,29 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Todo In-Memory Python Console App Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Code Quality Standards
+All Python code must follow PEP 8 conventions. Variable and function names must be clear, descriptive, and snake_case. Functions should be single-responsibility and no longer than 30 lines. Code must include inline comments for complex logic. Maintain a clean project structure: /src, /specs, /history, README.md, CLAUDE.md.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Specification-Driven Development
+Every feature must have a corresponding spec file in /specs before implementation. Use Spec-Kit Plus workflow for all development: /sp.specify → /sp.plan → /sp.tasks → /sp.implement. No manual coding allowed; all implementation must be generated via Claude Code guided by specs.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Task Management Rules
+Tasks must have unique IDs and include: Title (string), Description (string), Status (Pending/Complete). All operations (Add, Delete, Update, View, Mark Complete) must respect data consistency. Task listing must show status indicators clearly.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Documentation Standards
+README.md must include setup instructions, usage guide, and project structure explanation. CLAUDE.md must include Claude Code instructions, AI prompts used, and iterative steps. All specifications, plans, and ADRs must be stored in /history folder for reusable intelligence.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### AI-Oriented Development
+All AI-generated code must follow human-readable formatting. Prompt History (PHR) for Claude Code must be documented for future reference. AI outputs must be reviewed for correctness, clarity, and completeness before committing.
 
-### [PRINCIPLE_6_NAME]
+### Testing and Verification
+All implemented features must be verified manually via console. Ensure all basic functionalities work: 1. Add task, 2. Delete task, 3. Update task, 4. View tasks, 5. Mark task as complete/incomplete. No partial implementation allowed; each feature must pass verification before commit.
 
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+The development workflow follows the Spec-Kit Plus process: /sp.specify → /sp.plan → /sp.tasks → /sp.implement. All code changes must be reviewed and verified through console testing before being committed.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Constitution supersedes all other practices. Amendments require documentation, approval, and a migration plan. All PRs/reviews must verify compliance. Complexity must be justified. Use CLAUDE.md for runtime development guidance.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Please provide the original ratification date. | **Last Amended**: 2025-12-28

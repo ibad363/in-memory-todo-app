@@ -1,0 +1,9 @@
+[project]
+name = "todo-in-memory-app"
+version = "0.1.0"
+description = "A command-line Todo application that manages tasks entirely in memory"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Developer" }
+]
